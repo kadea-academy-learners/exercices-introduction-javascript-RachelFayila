@@ -18,4 +18,4 @@ console.log("Mère : " + ageMere + "ans");
 
 console.log("grand-père : " + ageGrandPere + "ans");
 
-console.log("oncle : " + ageOncle + "ans")
+console.log("oncle : " + ageOncle + "ans");
