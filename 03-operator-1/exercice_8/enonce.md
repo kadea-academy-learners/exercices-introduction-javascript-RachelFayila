@@ -9,6 +9,7 @@ Vous êtes en train de gérer un budget mensuel simple. Vous avez un salaire men
 
     2. Calculer la valeur de `loyer` en prenant 30% de `salaireMensuel`.
 
+
     3. Calculer la valeur de `nourriture` en prenant 20% de `salaireMensuel`.
 
     4. Calculer la valeur de `transport` en prenant 10% de `salaireMensuel`.
@@ -29,3 +30,33 @@ Vous êtes en train de gérer un budget mensuel simple. Vous avez un salaire men
 
     12. Ajouter une condition pour vérifier si les dépenses totales dépassent 90% du `salaireMensuel`. Si oui, afficher "Dépenses trop élevées, réduisez vos charges".
 -->
+
+
+
+
+
+let loisirs = salaireMensuel * 0.15;   // 15% du salaire
+totalDepenses = loyer + nourriture + transport + autresDepenses + loisirs;
+reste = salaireMensuel - totalDepenses;
+
+console.log("Pourcentage Loyer:", (loyer / salaireMensuel) * 100, "%");
+console.log("Pourcentage Nourriture:", (nourriture / salaireMensuel) * 100, "%");
+console.log("Pourcentage Transport:", (transport / salaireMensuel) * 100, "%");
+console.log("Pourcentage Autres:", (autresDepenses / salaireMensuel) * 100, "%");
+console.log("Pourcentage Loisirs:", (loisirs / salaireMensuel) * 100, "%");
+
+salaireMensuel = salaireMensuel * 1.10; // augmentation de 10%
+
+loyer = salaireMensuel * 0.3;
+nourriture = salaireMensuel * 0.2;
+transport = salaireMensuel * 0.1;
+loisirs = salaireMensuel * 0.15;
+
+// autresDepenses reste pareil si c'est fixe, sinon on peut l'ajuster
+totalDepenses = loyer + nourriture + transport + autresDepenses + loisirs;
+reste = salaireMensuel - totalDepenses;
+
+if (totalDepenses > salaireMensuel * 0.9) {
+    console.log("Dépenses trop élevées, réduisez vos charges");
+}
+
