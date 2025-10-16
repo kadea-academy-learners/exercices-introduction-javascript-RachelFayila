@@ -1,2 +1,11 @@
-// Exercice 6
-// Écrivez votre code ici
+let age = 22;
+
+let nom = "fayila";
+
+let estconnecte = true;
+
+let valeurNulle = null;
+
+let inconnue;
+
+console.log(age, nom, estconnecte, valeurNulle, inconnue);
